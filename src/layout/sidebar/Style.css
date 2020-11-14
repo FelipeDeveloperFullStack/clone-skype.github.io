@@ -1,7 +1,13 @@
+:root {
+    --color-secondary:  rgb(138, 141, 145);
+    --color-background-sidebar: #F1F4F9
+}
+
 .sidebar {
     height: 100vh;
     width: 320px;
     border: 1px solid #D5D9DE;
+    background: var(--color-background-sidebar)
 }
 
 .container_title {
@@ -33,10 +39,91 @@
 }
 
 .text {
-    color: rgb(138, 141, 145);
+    color: var(--color-secondary);
     padding-bottom: 5px;
 }
 
 .moreHorizIcon {
     cursor: pointer;
+}
+
+.input {
+    border: none;
+    outline: 0;
+    position: absolute;
+    left: 39px;
+    top: 64px;
+    background-color: var(--color-background-sidebar)
+}
+
+.searchIcon {
+    color: var(--color-secondary)
+}
+
+.container_input {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--color-secondary);
+    margin: 0px 10px 0px;
+    padding: 5px 0px 5px;
+    color: var(--color-secondary);
+    border-radius: 6px
+}
+
+.container_options {
+    display: flex;
+    justify-content: space-around;
+    font-size: 9px;
+    margin-top: 10px;
+}
+
+.container_options > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container_options > div:hover {
+    color: aqua;
+}
+
+.container_options > div > div {
+    color: var(--color-secondary);
+}
+
+.divider {
+    border: 1px solid var(--color-secondary);
+    margin-top: 10px;
+}
+
+.options_chat {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.options_chat > div {
+    display: flex;
+    font-size: 12px;
+}
+
+.options_chat div:first-child {
+    color: var(--color-secondary);
+    position: relative;
+    top: 3px
+}
+
+.expandMoreOutlinedIcon {
+    padding-bottom: 8px
+}
+
+.botton_chat {
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 71px;
+    height: 29px;
+    align-items: center;
+    padding-left: 7px;
+    box-shadow: 1px 1px 3px var(--color-secondary);
 }
