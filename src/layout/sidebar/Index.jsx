@@ -139,29 +139,31 @@ const Sidebar = () => {
                 FAVORITOS
             </div>
 
-            <div className='container_contacts'>
-            {contacts.map((contact, key) => {
-                return (
-                    
-                        <div  key={key}>
-                            <div>
-                                <Avatar />
+
+            <div className='scroll_contacts'>
+                {contacts.map((contact, key) => {
+                    return (
+                        <div className='container_contacts'>
+                            <div key={key}>
                                 <div>
-                                    <div><b>{contact.title}</b></div>
-                                    <div>{contact.subtitle}</div>
+                                    <Avatar />
+                                    <div>
+                                        <div><b>{contact.title}</b></div>
+                                        <div>{contact.subtitle}</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>{contact.date}</div>
+                                    <div className='chip'>{contact.chip_number}</div>
                                 </div>
                             </div>
-                            <div>
-                                <div>{contact.date}</div>
-                                <div className='chip'>{contact.chip_number}</div>
-                            </div>
                         </div>
-                    
-                )
-            })}
+                    )
+                })}
             </div>
-
         </div>
+
+
     )
 }
 
