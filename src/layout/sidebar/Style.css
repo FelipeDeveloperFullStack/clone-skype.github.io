@@ -53,11 +53,28 @@
     position: absolute;
     left: 39px;
     top: 64px;
-    background-color: var(--color-background-sidebar)
 }
 
 .searchIcon {
-    color: var(--color-secondary)
+    max-width: 20px;
+    position: relative;
+    left: 4px;
+    bottom: 1px;
+}
+
+.dialpadIcon {
+    position: relative;
+    max-width: 20px;
+    right: 5px;
+    bottom: 2px;
+}
+
+.container_input > div {
+    border-left: 1px solid #D5D9DE;
+    position: relative;
+    left: 117px;
+    height: 29px;
+    bottom: 6px;
 }
 
 .container_input {
@@ -67,7 +84,9 @@
     margin: 0px 10px 0px;
     padding: 5px 0px 5px;
     color: var(--color-secondary);
-    border-radius: 6px
+    border-radius: 3px;
+    height: 30px;
+    background-color: #FFF;
 }
 
 .container_options {
@@ -85,7 +104,7 @@
 }
 
 .container_options > div:hover {
-    color: aqua;
+    color: gray;
 }
 
 .container_options > div > div {
@@ -99,19 +118,13 @@
 
 .options_chat {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 10px;
 }
 
 .options_chat > div {
     display: flex;
     font-size: 12px;
-}
-
-.options_chat div:first-child {
-    color: var(--color-secondary);
-    position: relative;
-    top: 3px
 }
 
 .expandMoreOutlinedIcon {
@@ -121,9 +134,55 @@
 .botton_chat {
     background-color: #FFF;
     border-radius: 10px;
-    width: 71px;
-    height: 29px;
+    width: 145px;
+    height: 30px;
     align-items: center;
     padding-left: 7px;
+    justify-content: center;
+    font-size: 12px;
     box-shadow: 1px 1px 3px var(--color-secondary);
+}
+
+.text_chats_recents {
+    display: flex;
+    font-size: 12px;
+    padding: 10px;
+    color: var(--color-secondary);
+}
+
+.text_chats_recents :last-child {
+    font-size: 15px;
+}
+
+.text_favoritos {
+    display: flex;
+    font-size: 12px;
+    padding: 10px;
+    color: var(--color-secondary);
+}
+
+.container_contacts {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    margin: 0px 5px 0px;
+    margin-bottom: 17px;
+}
+
+.container_contacts :first-child {
+    display: flex;
+}
+
+.container_contacts :first-child > div > div {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.chip {
+    color: #FFF;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: #8A8D91;
 }
