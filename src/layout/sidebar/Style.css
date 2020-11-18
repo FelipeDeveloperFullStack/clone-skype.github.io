@@ -189,4 +189,9 @@
 
 .scroll_contacts {
     overflow: scroll;
+    max-height: 367px;
+}
+
+.scroll_contacts::-webkit-scrollbar {
+    background: #b30000; 
 }
