@@ -4,7 +4,7 @@
 }
 
 .sidebar {
-    height: 100vh;
+    height: 100%;
     width: 320px;
     border: 1px solid #D5D9DE;
     background: var(--color-background-sidebar)
@@ -189,9 +189,6 @@
 
 .scroll_contacts {
     overflow: scroll;
-    max-height: 367px;
+    
 }
 
-.scroll_contacts::-webkit-scrollbar {
-    background: #b30000; 
-}

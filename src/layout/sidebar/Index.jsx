@@ -90,7 +90,7 @@ const Sidebar = () => {
             </div>
 
             <div className='container_input'>
-                <SearchIcon className='searchIcon' for='input' />
+                <SearchIcon className='searchIcon' htmlFor='input' />
                 <input className='input' type="text" id='input' placeholder='People, groups e messages' />
                 <div />
                 <DialpadIcon className='dialpadIcon' />
