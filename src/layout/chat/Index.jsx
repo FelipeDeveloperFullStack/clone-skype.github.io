@@ -18,7 +18,16 @@ const useStyle = makeStyles({
         borderBottom: '1px solid #DADADC',
         display: 'flex',
         justifyContent: 'space-between',
-        padding: '24px'
+        padding: '24px',
+        position: 'fixed'
+    },
+    footer: {
+        height: '88px',
+        borderBottom: '1px solid #DADADC',
+        display: 'flex',
+        justifyContent: 'space-between',
+        padding: '24px',
+        position: 'fixed'
     },
     bottonsHeader: {
 
@@ -98,6 +107,44 @@ export default function Chat() {
 
                 </div>
             </div>
+
+            <div className={classes.footer}>
+                <div>
+                    <div className={classes.name}>Marcos Guimarães</div>
+                    <div style={{display: 'flex', fontSize: '11px'}}>
+                        <div style={{display: 'flex', paddingRight: '10px'}}>
+                            <FiberManualRecordOutlinedIcon className={classes.fiberManualRecordOutlinedIcon}/>
+                            <div style={{paddingTop: '2px'}}>Ativo agora</div>
+                        </div>
+                        <div style={{paddingTop: '2px'}}>|</div>
+                        <div style={{display: 'flex', paddingLeft: '10px', paddingRight: '10px'}}>
+                            <CollectionsBookmarkOutlinedIcon className={classes.collectionsBookmarkOutlinedIcon}/>
+                            <div style={{paddingTop: '2px'}}>Galeria</div>
+                        </div>
+                        <div style={{paddingTop: '2px'}}>|</div>
+                        <div style={{display: 'flex', paddingLeft: '10px', paddingRight: '10px'}}>
+                            <SearchOutlinedIcon className={classes.searchOutlinedIcon}/>
+                            <div style={{paddingTop: '2px'}}>Localizar</div>
+                        </div>
+                    </div>
+                </div>
+                <div className={classes.bottonsHeader}>
+                    <IconButton>
+                        <VideocamOutlinedIcon />
+                    </IconButton>
+
+                    <IconButton>
+                        <CallOutlinedIcon />
+                    </IconButton>
+
+                    <IconButton>
+                        <GroupAddOutlinedIcon />
+                    </IconButton>
+
+                </div>
+            </div>
+
+
         </div>
     )
 }
