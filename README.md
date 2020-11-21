@@ -1,4 +1,4 @@
-# Clone Skype
+# Clone Skype Web
 
 ![layout-clone-skype](https://user-images.githubusercontent.com/9463295/99867053-004b7a00-2b95-11eb-832b-0dd64cddb083.jpeg)
 
