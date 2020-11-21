@@ -11,64 +11,53 @@ import NotificationsOutlinedIcon from '@material-ui/icons/NotificationsOutlined'
 import VideocamOutlinedIcon from '@material-ui/icons/VideocamOutlined';
 import EditOutlinedIcon from '@material-ui/icons/EditOutlined';
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
-import { Divider } from '@material-ui/core';
+import NotificationsOffIcon from '@material-ui/icons/NotificationsOff';
 
 const Sidebar = () => {
 
     const contacts = [
         {
-            title: 'SQUAD | N2 DS | SAGA',
+            title: 'SQUAD | N2 DS',
             subtitle: 'Backlog N2 em 39 chamados',
-            date: '12:29',
-            chip_number: 12
+            date: '14:47'
         },
         {
-            title: 'SQUAD | N2 DS | SAGA',
+            title: 'Projeto Caixa Baixa TI',
             subtitle: 'Backlog N2 em 39 chamados',
-            date: '12:29',
-            chip_number: 12
+            date: '13:55'
         },
         {
-            title: 'SQUAD | N2 DS | SAGA',
+            title: 'TI - Suporte',
             subtitle: 'Backlog N2 em 39 chamados',
-            date: '12:29',
-            chip_number: 12
+            date: '17:18'
         },
         {
-            title: 'SQUAD | N2 DS | SAGA',
+            title: 'SQUAD | N1',
             subtitle: 'Backlog N2 em 39 chamados',
-            date: '12:29',
-            chip_number: 12
+            date: '09:12'
         },
         {
-            title: 'SQUAD | N2 DS | SAGA',
-            subtitle: 'Backlog N2 em 39 chamados',
+            title: 'Daniel',
+            subtitle: 'Citroen',
             date: '12:29',
-            chip_number: 12
+            chip_number: 2
         },
         {
-            title: 'SQUAD | N2 DS | SAGA',
-            subtitle: 'Backlog N2 em 39 chamados',
-            date: '12:29',
-            chip_number: 12
+            title: 'Renato',
+            subtitle: 'Chamado#0331332',
+            date: '11:48',
+            chip_number: 1
         },
         {
-            title: 'SQUAD | N2 DS | SAGA',
-            subtitle: 'Backlog N2 em 39 chamados',
-            date: '12:29',
-            chip_number: 12
+            title: 'João Antonio',
+            subtitle: 'Blz',
+            date: '13:33'
         },
         {
-            title: 'SQUAD | N2 DS | SAGA',
-            subtitle: 'Backlog N2 em 39 chamados',
-            date: '12:29',
-            chip_number: 12
-        },
-        {
-            title: 'SQUAD | N2 DS | SAGA',
-            subtitle: 'Backlog N2 em 39 chamados',
-            date: '12:29',
-            chip_number: 12
+            title: 'Marcos Guimarães',
+            subtitle: 'Chamado#0332211 - ELSA',
+            date: '11:43',
+            chip_number: 4
         }
     ]
 
@@ -81,7 +70,7 @@ const Sidebar = () => {
                 <div className='content_title'>
                     <div className='title_text'>
                         <div>Felipe Miguel <span className='text'>R$ 0,00</span></div>
-                        <div className='text'>GRUPO SAGA - Central de Serviços TI</div>
+                        <div className='text'>Central de Serviços TI</div>
                     </div>
                     <div className='moreHorizIcon'>
                         <MoreHorizIcon />
@@ -146,7 +135,7 @@ const Sidebar = () => {
                         <div className='container_contacts'>
                             <div key={key}>
                                 <div>
-                                    <Avatar />
+                                    <Avatar style={{display: 'flex', justifyContent: 'center'}}/>
                                     <div>
                                         <div><b>{contact.title}</b></div>
                                         <div>{contact.subtitle}</div>
@@ -154,7 +143,7 @@ const Sidebar = () => {
                                 </div>
                                 <div>
                                     <div>{contact.date}</div>
-                                    <div className='chip'>{contact.chip_number}</div>
+                                    {contact.chip_number ? <div className='chip'>{contact.chip_number}</div> : <NotificationsOffIcon className='notificationOffIcon'/>}
                                 </div>
                             </div>
                         </div>

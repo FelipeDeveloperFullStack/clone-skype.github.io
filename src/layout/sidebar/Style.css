@@ -7,7 +7,8 @@
     height: 100%;
     width: 320px;
     border: 1px solid #D5D9DE;
-    background: var(--color-background-sidebar)
+    background: var(--color-background-sidebar);
+  
 }
 
 .container_title {
@@ -93,7 +94,7 @@
     display: flex;
     justify-content: space-around;
     font-size: 9px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .container_options > div {
@@ -112,7 +113,7 @@
 }
 
 .divider {
-    border: 1px solid var(--color-secondary);
+    border-bottom: 1px solid #DADADC;
     margin-top: 10px;
 }
 
@@ -162,15 +163,14 @@
 }
 
 .container_contacts {
-    display: flex;
     font-size: 12px;
-    justify-content: space-between;
     margin: 0px 5px 0px;
     margin-bottom: 17px;
 }
 
 .container_contacts :first-child {
     display: flex;
+    justify-content: space-between;
 }
 
 .container_contacts :first-child > div > div {
@@ -180,15 +180,34 @@
 
 .chip {
     color: #FFF;
-    border-radius: 20px;
-    border: 1px solid black;
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+    border: 1px solid #0078D4;
     display: flex;
     justify-content: center;
-    background-color: #8A8D91;
+    align-items: center;
+    background-color: #0078D4;
+    font-size: 10px;
 }
 
-.scroll_contacts {
+.scroll_contacts{
     overflow: scroll;
-    
+    height: 360px;
+}
+.scroll_contacts:hover{
+   
+    height: 360px;
+}
+
+.scroll_contacts::-webkit-scrollbar-thumb{
+    height: 20px;
+}
+
+.notificationOffIcon {
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 17px;
+    color: grey;
 }
 

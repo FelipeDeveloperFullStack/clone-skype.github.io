@@ -11,4 +11,5 @@ body::-webkit-scrollbar {
 .container {
     display: flex;
     font-family: 'roboto';
+    position: fixed;
 }
